@@ -19,6 +19,11 @@ Public Class BundleConfig
         bundles.Add(New ScriptBundle("~/bundles/modernizr").Include(
                     "~/Scripts/modernizr-*"))
 
+        bundles.Add(New ScriptBundle("~/bundles/knockout").Include(
+                    "~/Scripts/knockout-2.2.0.js",
+                    "~/Scripts/knockout.mapping-latest.js"
+                    ))
+
         bundles.Add(New StyleBundle("~/Content/css").Include("~/Content/site.css"))
 
         bundles.Add(New StyleBundle("~/Content/themes/base/css").Include(

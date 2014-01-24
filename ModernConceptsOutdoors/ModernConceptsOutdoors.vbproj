@@ -158,9 +158,13 @@
     <Compile Include="App_Start\RouteConfig.vb" />
     <Compile Include="App_Start\WebApiConfig.vb" />
     <Compile Include="Controllers\MvcFolders\HomeController.vb" />
+    <Compile Include="Controllers\MvcFolders\StandardSpiritLiftController.vb" />
+    <Compile Include="Models\ApiResult.vb" />
+    <Compile Include="Controllers\WebApiControllers\ContactController.vb" />
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Email.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -190,14 +194,26 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\PublishProfiles\ModernConceptsPublish.pubxml" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
+    <Content Include="Content\images\header.jpg" />
+    <Content Include="Content\images\Home\dsc01134.jpg" />
     <Content Include="Content\images\logo.jpg" />
     <Content Include="Content\images\modernConceptsImage.jpg" />
-    <Content Include="Content\images\SpiritLift2.0\drive-system.png" />
+    <Content Include="Content\images\OriginalSpiritLift\dsc01080.jpg" />
+    <Content Include="Content\images\OriginalSpiritLift\dsc01106.jpg" />
+    <Content Include="Content\images\SpiritLift2.0SwivelSetup\drive-system.png" />
+    <Content Include="Content\images\SpiritLift2.0SwivelSetup\dsc08720.jpg" />
+    <Content Include="Content\images\SpiritLift2.0SwivelSetup\dsc08729.jpg" />
+    <Content Include="Content\images\SpiritLift2.0SwivelSetup\dsc08822.jpg" />
+    <Content Include="Content\images\SpiritLift2.0SwivelSetup\dsc08826.jpg" />
+    <Content Include="Content\images\SpiritLift2.0SwivelSetup\dsc08840.jpg" />
+    <Content Include="Content\images\SpiritLift2.0SwivelSetup\standard-treestand-1.png" />
+    <Content Include="Content\images\SpiritLift2.0SwivelSetup\standard-treestand-2.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -253,12 +269,20 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\ContactUs.js" />
+    <Content Include="Scripts\domReady.js" />
+    <Content Include="Scripts\knockout.mapping-latest.debug.js" />
+    <Content Include="Scripts\knockout.mapping-latest.js" />
+    <Content Include="Scripts\text.js" />
     <Content Include="Views\Home\Index.vbhtml" />
     <Content Include="Views\Home\Blog.vbhtml" />
     <Content Include="Views\Home\OriginalSpiritLift.vbhtml" />
     <Content Include="Views\Home\SpiritLift2.vbhtml" />
     <Content Include="Views\Home\PhotosAndVideos.vbhtml" />
     <Content Include="Views\Home\ContactUs.vbhtml" />
+    <Content Include="Views\StandardSpiritLift\Index.vbhtml" />
+    <Content Include="Views\StandardSpiritLift\WheelchairPlatform.vbhtml" />
+    <Content Include="Views\StandardSpiritLift\Ladder.vbhtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
@@ -293,7 +317,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

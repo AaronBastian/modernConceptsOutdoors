@@ -25,6 +25,8 @@
     End Function
 
     Function ContactUs() As ActionResult
+        Dim apiUri As String = Url.HttpRouteUrl("DefaultApi", New With {.controller = "Contact"})
+        ViewBag.ApiUri = New Uri(Request.Url, apiUri).AbsoluteUri.ToString()
         Return View()
     End Function
 End Class
